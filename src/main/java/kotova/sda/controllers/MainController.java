@@ -8,9 +8,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class MainController {
 
-    @RequestMapping ("/")
-    @ResponseBody
+    @RequestMapping ("/PersonalToDoList")
     String meow() {
-        return "RAWR";
+        return "firstpage_form";
     }
 }
