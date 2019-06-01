@@ -12,4 +12,9 @@ public class MainController {
     String meow() {
         return "firstpage_form";
     }
+
+    @RequestMapping ("/PersonalToDoList/Registration")
+    String gav() {
+        return "registration_form";
+    }
 }

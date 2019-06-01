@@ -6,6 +6,44 @@
     <meta charset="UTF-8">
 </head>
 <body>
+<div class="registration_container" th:action="@{/PersonalToDoList/Registration}">
+    <h2>~ Register ~</h2>
+    <p>Please fill in this form to create your personal TODO List.</p>
+    <hr>
+    <label><b>User name</b></label>
+    <br>
+    <input type="text" placeholder="Enter User name" name="userName" required>
+    <br>
+    <label><b>Gender</b></label>
+    <br> <br>
+    <label class="container_checkmark">
+        <span class="checkmark"></span>
+        <input type="radio" checked="checked" name="radio">
+        Female
+    </label>
+    <label class="container_checkmark">
+        <span class="checkmark"></span>
+        <input type="radio" name="radio">
+        Male
+    </label>
+    <br> <br>
+    <label><b>Email</b></label>
+    <br>
+    <input type="text" placeholder="Enter Email" name="email" required>
+    <br>
+    <label><b>Password</b></label>
+    <br>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+    <br>
+    <label><b>Repeat Password</b></label>
+    <br>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+    <hr>
+
+
+    <button type="submit" class="registerbtn">Register</button>
+</div>
+
 
 </body>
 </html>

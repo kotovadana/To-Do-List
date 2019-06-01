@@ -9,6 +9,7 @@
 
 <div class = "firstpage_container" th:action="@{/PersonalToDoList}" >
     <h2>~ TODO List ~</h2>
+    <hr>
     <label><b>Username</b></label>
     <br>
     <input type="text" placeholder="Enter Username" name="uname" required>
@@ -18,7 +19,7 @@
     <input type="password" placeholder="Enter Password" name="psw" required>
     <br>
     <button type="submit">Login</button>
-    <button type="register">Register</button>
+    <button type="register"><a href = "/PersonalToDoList/Registration">Register</a></button>
     <br>
     <label>
         <input type="checkbox" checked="checked" name="remember"> Remember me
@@ -28,7 +29,7 @@
 <div class="container" style="background-color:#d2c3d8">
 
         <span class="psw"> <a href="#">Forgot password?</a></span>
-        <br><br>
+        <hr>
         <img src="/images/forgotpassword.jpg">
 </div>
 
