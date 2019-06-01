@@ -1,0 +1,39 @@
+TODO List.
+
+
+1. First Page (ENDPOINT = "/PersonalToDoList")
+	-Log IN 
+		- Email
+		- Password
+			if successfully : go to ENDPOINT "/PersonalToDoList/ToDoList"
+			if unsuccessfully : refresh page + show text "Are you sure you've entered valid data? Try again"
+	-Create NEW TODO List ( Go to ENDPOINT = "/PersonalToDoList/Registration")
+2. Registration Page (ENDPOINT = "/PersonalToDoList/Registration")
+	-UserName
+	-Female/Male
+	-Email
+	-Password
+	-Repeat Password
+	Bottoms :
+		GO !
+3. Successful Registration (ENDPOINT = "/PersonalToDoList/Registration/Successful"
+	You have successfully created your own TODO List. Log IN to begin.
+	Bottoms :
+		Yuup ! (Go to ENDPOINT = "/PersonalToDoList")
+3. Main working page : (ENDPOINT "/PersonalToDoList/ToDoList")
+	Creating tasks :
+		-Task name
+		-Comments
+		-Creation date
+		-Reason (Self-development, Physical self-investment, Helping someone, Family duties, Other (offering user to write the reason by himself)
+		-Priority (ASAP, very needed, can wait, very low)
+		-Planned End date
+		-Day X 
+		-Status (draft,new,in process,finished,canceled)
+			if finished : successfully/ unsuccessfully
+			if canceled : (offering user to write the reason by himself)
+	Bottoms :
+		Create NEW (Open new page (above main one))
+		
+		
+		
