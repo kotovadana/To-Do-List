@@ -6,10 +6,10 @@
     <meta charset="UTF-8">
 </head>
 <body>
-<div class="registration_container" th:action="@{/PersonalToDoList/Registration}">
-    <h2>~ Register ~</h2>
-    <p>Please fill in this form to create your personal TODO List.</p>
-    <hr>
+<div class="registration_container" th:action="@{/PersonalToDoList/Registration}" >
+   <div style="background-color:#EAE0EE"> <h2>~ Register ~</h2>
+    <p>Please fill in this form to create your personal TODO List.  <hr></div>
+
     <label><b>User name</b></label>
     <br>
     <input type="text" placeholder="Enter User name" name="userName" required>
@@ -38,10 +38,11 @@
     <label><b>Repeat Password</b></label>
     <br>
     <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+    <div style="background-color:#EAE0EE">
     <hr>
-
-
     <button type="submit" class="registerbtn">Register</button>
+    </div>
 </div>
 
 

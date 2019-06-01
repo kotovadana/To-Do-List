@@ -15,6 +15,9 @@ public class RegistrationList {
     private String gender;
     private String email;
     private String password;
+    private String password_2;
+
+
 
 
 
