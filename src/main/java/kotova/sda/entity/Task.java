@@ -9,7 +9,7 @@ import javax.persistence.Id;
 import java.util.Date;
 
 @Entity
-public class ToDoList {
+public class Task {
     @Id
     @GeneratedValue (strategy = GenerationType.AUTO)
     private long id;
@@ -28,7 +28,7 @@ public class ToDoList {
     private String status;
     //
 
-    public  ToDoList () {}
+    public Task() {}
 
     public long getId() {
         return id;
