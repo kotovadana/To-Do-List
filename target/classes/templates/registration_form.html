@@ -7,47 +7,39 @@
     <meta charset="UTF-8">
 </head>
 <body>
-<div class="registration_container" th:action="@{/PersonalToDoList/Registration}" >
-   <div> <h2> Register </h2>
-    <p>Please fill in this form to create your personal TODO List.  <hr></div>
+<div class="registration_container">
 
-    <label><b>User name</b></label>
-    <br>
-    <input type="text" placeholder="Enter User name" name="userName" required>
-    <br>
-    <label><b>Gender</b></label>
-    <br>
-    <label class="container_checkmark">
-        <span class="checkmark"></span>
-        <input type="radio" checked="checked" name="radio">
-        Female
-    </label>
-    <label class="container_checkmark">
-        <span class="checkmark"></span>
-        <input type="radio" name="radio">
-        Male
-    </label>
-    <br>
-    <label><b>Email</b></label>
-    <br>
-    <input type="text" placeholder="Enter Email" name="email" required>
-    <br>
-    <label><b>Password</b></label>
-    <br>
-    <input type="password" placeholder="Enter Password" name="psw" required>
-    <br>
-    <label><b>Repeat Password</b></label>
-    <br>
-    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+<form method="post" action="#" th:object="${user}" th:action="@{/PersonalToDoList/Registration}">
+   <h2> Registration </h2>
+    <p>Please fill in this form to create your personal TODO List.<hr>
+    <input type="hidden" id="id" th:field="*{id}"/>
+
+    <label><b>User name</b></label><br>
+    <input type="text" placeholder="Enter User name" id="userName" th:field="*{userName}"/><br>
+
+    <label><b>Gender</b></label><br>
+    <label class="container_checkmark"><span class="checkmark"></span>
+        <input type="radio" checked="checked" name="female" th:value="*{female}">Female</label>
+    <label class="container_checkmark"><span class="checkmark"></span>
+        <input type="radio" name="male" th:value="*{male}">Male</label><br>
+
+    <label><b>Email</b></label><br>
+    <input type="text" placeholder="Enter Email" name="email" th:value="*{email}"><br>
+
+    <label><b>Password</b></label><br>
+    <input type="password" placeholder="Enter Password" name="password" th:value="*{password}"><br>
+
+    <label><b>Repeat Password</b></label><br>
+    <input type="password" placeholder="Repeat Password" name="password_2" th:value="*{password_2}">
 
     <div style="background-color:#EDECEC">
     <hr>
-        <a href = "/PersonalToDoList/Registration/Successful_reg"><button type="button" class="btn btn-outline-secondary">Register</button></a>
+        <a href = "/PersonalToDoList/Registration/Successful_reg"><button type="submit" value="Submit" class="btn btn-outline-secondary">Register</button></a>
         <a href = "/PersonalToDoList"><button type="button" class="btn btn-outline-danger">Cancel</button></a>
     <hr>
     </div>
+</form>
+
 </div>
-
-
 </body>
 </html>
