@@ -7,7 +7,7 @@ form {
 }
 
 h2 {
-    color: darkmagenta;
+    color: indianred;
 }
  img {
    width: 20%;
@@ -16,6 +16,7 @@ h2 {
 
 /* Full-width inputs */
 input[type=text], input[type=password] {
+  height: 30px;
   width: 20%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -23,23 +24,6 @@ input[type=text], input[type=password] {
   border: 1px solid #ccc;
   box-sizing: border-box;
 }
-
-/* Set a style for all buttons */
-button {
-  background-color: #944caf;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: auto;
-}
-
-/* Add a hover effect for buttons */
-button:hover {
-  opacity: 0.8;
-}
-
 
 /* Center the avatar image inside this container */
 .imgcontainer {

@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Registration Form</title>
+    <title>Log In Page</title>
+    <link rel = "stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel = "stylesheet" href="/css/firstpage_style.css" />
     <meta charset="UTF-8">
 </head>
 <body>
 
 <div class = "firstpage_container" th:action="@{/PersonalToDoList}" >
-    <div style="background-color:#EAE0EE">
+    <div>
         <br>
-        <h2>~ TODO List ~</h2>
+        <h2> TODO List </h2>
         <hr>
     </div>
     <label><b>Username</b></label>
@@ -21,15 +22,15 @@
     <br>
     <input type="password" placeholder="Enter Password" name="psw" required>
     <br>
-    <button type="submit">Login</button>
-    <button type="register"><a href = "/PersonalToDoList/Registration">Register</a></button>
+    <a href = "/PersonalToDoList/List"><button type="button" class="btn btn-outline-secondary">Log In</button></a>
+    <a href = "/PersonalToDoList/Registration"><button type="button" class="btn btn-outline-danger">Register</button></a>
     <br>
     <label>
         <input type="checkbox" checked="checked" name="remember"> Remember me
     </label>
 </div>
 
-<div class="container" style="background-color:#EAE0EE">
+<div class="container" style="background-color:#FEEFEF">
         <img src="/images/forgotpassword.jpg"> <br>
         <span class="psw"> <a href="#">Forgot password?</a></span>
 

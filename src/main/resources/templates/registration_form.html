@@ -3,11 +3,12 @@
 <head>
     <title>Registration Form</title>
     <link rel = "stylesheet" href="/css/registration_style.css" />
+    <link rel = "stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <meta charset="UTF-8">
 </head>
 <body>
 <div class="registration_container" th:action="@{/PersonalToDoList/Registration}" >
-   <div style="background-color:#EAE0EE"> <h2>~ Register ~</h2>
+   <div> <h2> Register </h2>
     <p>Please fill in this form to create your personal TODO List.  <hr></div>
 
     <label><b>User name</b></label>
@@ -15,7 +16,7 @@
     <input type="text" placeholder="Enter User name" name="userName" required>
     <br>
     <label><b>Gender</b></label>
-    <br> <br>
+    <br>
     <label class="container_checkmark">
         <span class="checkmark"></span>
         <input type="radio" checked="checked" name="radio">
@@ -26,7 +27,7 @@
         <input type="radio" name="radio">
         Male
     </label>
-    <br> <br>
+    <br>
     <label><b>Email</b></label>
     <br>
     <input type="text" placeholder="Enter Email" name="email" required>
@@ -39,9 +40,11 @@
     <br>
     <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
 
-    <div style="background-color:#EAE0EE">
+    <div style="background-color:#EDECEC">
     <hr>
-    <button type="submit" class="registerbtn">Register</button>
+        <a href = "/PersonalToDoList/Registration/Successful_reg"><button type="button" class="btn btn-outline-secondary">Register</button></a>
+        <a href = "/PersonalToDoList"><button type="button" class="btn btn-outline-danger">Cancel</button></a>
+    <hr>
     </div>
 </div>
 
